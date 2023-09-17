@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToCoToCoTea - Danh mục sản phẩm</title>
+    <!-- favicon  -->
+    <link
+      rel="shortcut icon"
+      href="./img/logo/favicon-32x32-1.png"
+      type="image/x-icon"
+    />
+    <!-- bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- icon-link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link css handle  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <!-- link js libraries  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- link js handle -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid wrapper-header">
+      <header>
+        <img
+          class="logo d-none d-md-block"
+          src="./img/logo/Logo-ngang-01.png"
+          alt=""
+        />
+        <div class="back-home-page d-none d-md-block">
+          <span class="material-symbols-outlined"> west </span>
+        </div>
+        <div class="search-box flex-md-grow-1">
+          <span class="material-symbols-outlined"> search </span>
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Tìm kiếm sản phẩm ..."
+          />
+        </div>
+        <div class="d-md-flex justify-content-md-end">
+          <button class="login-btn product-btn">Đăng nhập</button>
+          <img src="img/logo/logo_icon.png" alt="" class="acc-logo" />
+        </div>
+      </header>
+      <div class="container mt-md-2 d-flex mb-md-4">
+        <div class="categories col col-md-3 col-lg-3">
+          <ul class="list-group category-list">
+            <li class="list-group-item"><h4>Danh Mục</h4></li>
+            <li class="list-group-item">
+              <a href="#mnb">Món nổi bật</a><span>10</span>
+            </li>
+            <li class="list-group-item">
+              <a href="#imt">Instant Milk Tea</a><span>10</span>
+            </li>
+            <li class="list-group-item">
+              <a href="#ts">Trà Sữa</a><span>10</span>
+            </li>
+            <li class="list-group-item">
+              <a href="">Fresh Fruit Tea</a><span>10</span>
+            </li>
+            <li class="list-group-item">
+              <a href="">Machiato Cream Cheese</a><span>10</span>
+            </li>
+            <li class="list-group-item">
+              <a href="">Sữa Chua Dẻo</a><span>10</span>
+            </li>
+          </ul>
+        </div>
+        <div class="products col col-md-5 col-lg-6 col-sm-11">
+          <div class="wrapper-product-list">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button
+                    id="mnb"
+                    class="accordion-button category-title-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Món nổi bật
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body product-list d-flex">
+                    <div class="product-item" id="pi1">
+                      <div class="wrapper-product-item">
+                        <img
+                          src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                          alt=""
+                        />
+                        <div class="wrapper-product-content">
+                          <div class="product-content">
+                            <p class="product-name">Ô Long Mận Chanh Leo</p>
+                            <div class="price">
+                              <p class="new-product-price">25,000đ</p>
+                              <p class="old-product-price">33,000đ</p>
+                            </div>
+                            <button
+                              class="add-to-cart-btn"
+                              id="order-btn"
+                              value="pi1"
+                            >
+                              <span class="material-symbols-outlined">
+                                shopping_bag
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Trà Sữa Trân Châu Đường Hổ</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">
+                            Trà Đào Dâu Tây Kem Phô Mai
+                          </p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Ô Long Mận Chanh Leo</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Ô Long Mận Chanh Leo</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Ô Long Mận Chanh Leo</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button
+                    id="imt"
+                    class="accordion-button category-title-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    Instant Milk Tea
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingTwo"
+                >
+                  <div class="accordion-body product-list d-flex">
+                    <div class="product-item" id="pi1">
+                      <div class="wrapper-product-item">
+                        <img
+                          src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                          alt=""
+                        />
+                        <div class="wrapper-product-content">
+                          <div class="product-content">
+                            <p class="product-name">Ô Long Mận Chanh Leo</p>
+                            <div class="price">
+                              <p class="new-product-price">25,000đ</p>
+                              <p class="old-product-price">33,000đ</p>
+                            </div>
+                            <button
+                              class="add-to-cart-btn"
+                              id="order-btn"
+                              value="pi1"
+                            >
+                              <span class="material-symbols-outlined">
+                                shopping_bag
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Trà Sữa Trân Châu Đường Hổ</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">
+                            Trà Đào Dâu Tây Kem Phô Mai
+                          </p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Ô Long Mận Chanh Leo</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Ô Long Mận Chanh Leo</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Ô Long Mận Chanh Leo</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button
+                    id="ts"
+                    class="accordion-button category-title-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    Trà Sữa
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseThree"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingThree"
+                >
+                  <div class="accordion-body product-list d-flex">
+                    <div class="product-item" id="pi1">
+                      <div class="wrapper-product-item">
+                        <img
+                          src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                          alt=""
+                        />
+                        <div class="wrapper-product-content">
+                          <div class="product-content">
+                            <p class="product-name">Ô Long Mận Chanh Leo</p>
+                            <div class="price">
+                              <p class="new-product-price">25,000đ</p>
+                              <p class="old-product-price">33,000đ</p>
+                            </div>
+                            <button
+                              class="add-to-cart-btn"
+                              id="order-btn"
+                              value="pi1"
+                            >
+                              <span class="material-symbols-outlined">
+                                shopping_bag
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Trà Sữa Trân Châu Đường Hổ</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">
+                            Trà Đào Dâu Tây Kem Phô Mai
+                          </p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Ô Long Mận Chanh Leo</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Ô Long Mận Chanh Leo</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <img
+                        src="./img/products/O-Long-Man-Chanh-Leo.jpg"
+                        alt=""
+                      />
+                      <div class="wrapper-product-content">
+                        <div class="product-content">
+                          <p class="product-name">Ô Long Mận Chanh Leo</p>
+                          <div class="price">
+                            <p class="new-product-price">25,000đ</p>
+                            <p class="old-product-price">33,000đ</p>
+                          </div>
+                          <div class="add-to-cart-btn">
+                            <span class="material-symbols-outlined">
+                              shopping_bag
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart col col-lg-3 col-md-3 col-sm-12">
+          <div class="col col-md-12 cart-title">
+            <h4>Giỏ Hàng Của Tôi</h4>
+            <button class="del-all">Xóa tất cả</button>
+          </div>
+          <div class="col col-md-12 cart-body">
+            <div class="order-item">
+              <p class="no-item">Chưa có sản phẩm nào!</p>
+            </div>
+            <div class="order-price">
+              <img src="./img/icon-glass-tea.png" alt="" />
+              <span>x</span>
+              <span class="total-quantity">0</span>
+              <span>=</span>
+              <span class="total-price">0</span>
+              <span>đ</span>
+            </div>
+            <div class="pay-btn">
+              <button class="pay-btn product-btn">Thanh toán</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container modal-container">
+        <!-- The Modal -->
+        <div id="order-form" class="order-modal">
+          Modal content
+          <div class="modal-content d-flex">
+            <span id="cls" class="close">&times;</span>
+            <form class="" action="" method="post">
+              <div class="modal-product-content d-flex col col-md-12"></div>
+              <div class="note-box col col-12">
+                <div class="box">
+                  <div class="title-note-box">
+                    <h6>Chọn loại</h6>
+                    <span class="material-symbols-outlined">
+                      keyboard_arrow_down
+                    </span>
+                  </div>
+                  <div class="choise">
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="type"
+                        id="typecold"
+                        checked
+                        value="Loại lạnh"
+                      />
+                      <label for="typecold">Lạnh</label>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="type"
+                        id="typehot"
+                        value="Loại nóng"
+                        checked
+                      />
+                      <label for="typehot">Nóng</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="title-note-box">
+                    <h6>Chọn size</h6>
+                    <span class="material-symbols-outlined">
+                      keyboard_arrow_down
+                    </span>
+                  </div>
+                  <div class="choise">
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="size"
+                        id="sizeL"
+                        checked
+                        value="L"
+                      />
+                      <label for="sizeL">Size L</label>
+                    </div>
+                    <div class="choise-item">
+                      <input type="radio" name="size" id="sizeM" value="M" />
+                      <label for="sizeM">Size M</label>
+                    </div>
+                    <div class="choise-item">
+                      <input type="radio" name="size" id="sizeS" value="S" />
+                      <label for="sizeS">Size S</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="title-note-box">
+                    <h6>Chọn đường</h6>
+                    <span class="material-symbols-outlined">
+                      keyboard_arrow_down
+                    </span>
+                  </div>
+                  <div class="choise">
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="sugar"
+                        id="sugar100"
+                        value="100% đường"
+                        checked
+                      />
+                      <label for="sugar100">100%</label>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="sugar"
+                        id="sugar70"
+                        value="70% đường"
+                      />
+                      <label for="sugar70">70%</label>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="sugar"
+                        id="sugar30"
+                        value="30% đường"
+                      />
+                      <label for="sugar30">30%</label>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="sugar"
+                        id="sugarno"
+                        value="Không đường"
+                      />
+                      <label for="sugarno">Không đường</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="title-note-box">
+                    <h6>Chọn đá</h6>
+                    <span class="material-symbols-outlined">
+                      keyboard_arrow_down
+                    </span>
+                  </div>
+                  <div class="choise">
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="ice"
+                        id="iceheatup"
+                        value="Làm nóng"
+                      />
+                      <label for="iceheatup">Làm nóng</label>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="ice"
+                        id="ice100"
+                        value="100% đá"
+                      />
+                      <label for="ice100">100%</label>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="ice"
+                        id="ice50"
+                        checked
+                        value="50% đá"
+                      />
+                      <label for="ice50">50%</label>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="radio"
+                        name="ice"
+                        id="iceno"
+                        value="Không đá"
+                      />
+                      <label for="iceno">Không đá</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="title-note-box">
+                    <h6>Chọn topping</h6>
+                    <span class="material-symbols-outlined">
+                      keyboard_arrow_down
+                    </span>
+                  </div>
+                  <div class="choise">
+                    <div class="choise-item">
+                      <input
+                        type="checkbox"
+                        name="topping"
+                        id="topping1"
+                        value="Thêm trân châu sương mai"
+                      />
+                      <label for="topping1">Thêm trân châu sương mai</label>
+                      <div class="topping-price">+11,000đ</div>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="checkbox"
+                        name="topping"
+                        id="topping2"
+                        value="Thêm trân châu Machiato"
+                      />
+                      <label for="topping2">Thêm trân châu Machiato</label>
+                      <div class="topping-price">+10,000đ</div>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="checkbox"
+                        name="topping"
+                        id="topping3"
+                        value="Thêm trân châu Baby"
+                      />
+                      <label for="topping3">Thêm trân châu Baby</label>
+                      <div class="topping-price">+9,000đ</div>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="checkbox"
+                        name="topping"
+                        id="topping4"
+                        value="Thêm trân châu dâu tây"
+                      />
+                      <label for="topping4">Thêm trân châu dâu tây</label>
+                      <div class="topping-price">+8,000đ</div>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="checkbox"
+                        name="topping"
+                        id="topping5"
+                        value="Thêm trân châu dừa"
+                      />
+                      <label for="topping5">Thêm trân châu dừa</label>
+                      <div class="topping-price">+7,000đ</div>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="checkbox"
+                        name="topping"
+                        id="topping6"
+                        value="Thêm trân châu hoàng kim"
+                      />
+                      <label for="topping6">Thêm trân châu hoàng kim</label>
+                      <div class="topping-price">+6,000đ</div>
+                    </div>
+                    <div class="choise-item">
+                      <input
+                        type="checkbox"
+                        name="topping"
+                        id="topping7"
+                        value="Thêm trân châu băng tuyết"
+                      />
+                      <label for="topping7">Thêm trân châu băng tuyết</label>
+                      <div class="topping-price">+5,000đ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="categories-btn col col-sm-3">
+        <div class="btn-cate-menu">
+          <span
+            class="material-symbols-outlined btn-menu"
+            style="color: #d2a451"
+          >
+            menu
+          </span>
+          <span class="material-symbols-outlined x-btn" style="color: #d2a451">
+            close
+          </span>
+        </div>
+        <ul class="list-group category-list">
+          <li class="list-group-item"><h4>Danh Mục</h4></li>
+          <li class="list-group-item">
+            <a href="#mnb">Món nổi bật</a><span>10</span>
+          </li>
+          <li class="list-group-item">
+            <a href="#imt">Instant Milk Tea</a><span>10</span>
+          </li>
+          <li class="list-group-item">
+            <a href="#ts">Trà Sữa</a><span>10</span>
+          </li>
+          <li class="list-group-item">
+            <a href="">Fresh Fruit Tea</a><span>10</span>
+          </li>
+          <li class="list-group-item">
+            <a href="">Machiato Cream Cheese</a><span>10</span>
+          </li>
+          <li class="list-group-item">
+            <a href="">Sữa Chua Dẻo</a><span>10</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
